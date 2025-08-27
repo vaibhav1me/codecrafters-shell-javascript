@@ -7,7 +7,9 @@ const rl = readline.createInterface({
 
 const prompt = () => {
   rl.question("$ ", (answer) => {
-    console.log(`${answer}: command not found`)
+    if(answer == "exit 0") {
+      rl.close();
+    }
     prompt();
   });
 }
