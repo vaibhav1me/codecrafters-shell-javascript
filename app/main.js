@@ -20,7 +20,7 @@ const prompt = () => {
       if (builtIns.includes(message)) {
         console.log(`${message} is a shell builtin`);
       } else {
-        `${message}: not found`;
+        console.log(`${message}: not found`);
       }
       prompt();
     } else {
